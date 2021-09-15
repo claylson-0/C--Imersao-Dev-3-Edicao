@@ -1,20 +1,20 @@
-var nome ="Claylson";
+function CalcularMedia(){
+    var nota1 = parseFloat(document.getElementById("nota1").value);
+    var nota2 = parseFloat(document.getElementById("nota2").value);
+    var nota3 = parseFloat(document.getElementById("nota3").value);
+    var nota4 = parseFloat(document.getElementById("nota4").value);
+    var media= (nota1+nota2+nota3+nota4)/4;
+    document.getElementById("media").innerHTML="A media é "+media;
+}
 
-var notaDoPrimeiroBimestre=9;
-var notaDoSegundoBimestre=7;
-var notaDoTerceiroBimestre=4;
-var notaDoQuartoBimestre=2;
+function CelciusParaFarenheit(){
+    var celcius= parseFloat(document.getElementById("celcius").value);
+    var farenheit= (celcius*(9/5))+32
+    document.getElementById("farenheit").innerHTML="A temperatura em Farenheit é "+farenheit;
+}
 
-var notaFinal= (notaDoPrimeiroBimestre+notaDoSegundoBimestre+notaDoTerceiroBimestre+notaDoQuartoBimestre)/4;
-
-var notaFixada=notaFinal.toFixed(1);
-
-
-console.log("Bem vindo "+nome);
-console.log(notaFixada)
 
 //isso é um comentario
 
 //revisão
 // variaveis ,strings, console.log, toFixed, operações matematicas, concatenação
-//conversor de temperatura, km, moeda

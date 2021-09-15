@@ -8,10 +8,10 @@
     <title>Imersão Dev - Aula 01</title>
 </head>
 <body>
-    <div class="container">
-      <h1 class="page-title">
+    <div class="container centro">
+      <h1 class="page-title fonte">
       Calculadora de média</h1>
-      <p class="page-subtitle">
+      <p class="page-subtitle fonte">
       Descubra qual a sua média de nota de todas as provas!
       </p>
       <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
@@ -19,5 +19,30 @@
     <a href="https://alura.com.br/" target="_blank">
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
     </a>
+    <div class="container fonte display">
+      <img src="https://image.flaticon.com/icons/png/512/201/201635.png" alt="nota A+" class="img-nota">
+      <div class="container fonte borda">
+        <div>
+          <label>Insira a primeira nota</label><br>
+          <input type="number" id="nota1"/><br>
+          <label>Insira a segunda nota</label><br>
+          <input type="number" id="nota2"/><br>
+          <label>Insira a terceira nota</label><br>
+          <input type="number" id="nota3"/><br>
+          <label>Insira a quarta nota</label><br>
+          <input type="number" id="nota4"/><br>
+          <button type="submit" onclick="CalcularMedia()">Calcular media</button>
+          <h2 id="media"></h2>
+        </div>
+        <div>
+          <label>Insira a temperatura em graus celcius</label><br>
+          <input type="number" id="celcius"/><br>
+          <button type="submit" onclick="CelciusParaFarenheit()">Conveter</button>
+          <h2 id="farenheit"></h2>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script src="javascript.js"></script>
 </html>
