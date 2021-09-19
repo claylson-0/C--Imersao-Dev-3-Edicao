@@ -16,10 +16,28 @@
           Descubra os valores em real R$
         </p>
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
-        <label for="moeda">Insira o valor</label><br>
+        <label>Insira a moeda<br>
+        (dólar, euro e bitcoin)</label><br>
+        <input type="text" id="moeda" size="2" /><br>
+        <label>Insira o valor</label><br>
         <input type="number" id="valor" size="2" /><br>
         <button type="submit" onclick="Converter()">Converter</button>
-        <h2 id="valorConvertido"></h2>
+        <h2 id="valorConvertido"></h2><br><br>
+
+        <label>Insira a distância em KM</label><br>
+        <input type="number" id="km" size="2" /><br>
+        <button type="submit" onclick="anoLuz()">Converter</button>
+        <h2 id="anoLuzConvertido"></h2><br><br>
+
+        <label>Valor em temperatura</label>
+        <input type="number" id="valorTemp" size="2" />
+        <label>Temperatura (farenheit, kelvin e celcius)</label>
+        <input type="text" id="entradaTemp" size="2" /><br>
+        <label>Para (farenheit, kelvin e celcius)</label>
+        <input type="text" id="saidaTemp" size="2" /><br>
+        <button type="submit" onclick="temperatura()">Converter</button>
+        <h2 id="temConvertido"></h2>
+        
       </div>
       <a href="https://alura.com.br/" target="_blank">
         <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo"> 
