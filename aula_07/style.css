@@ -73,3 +73,7 @@ h2 {
 .opcoes {
     color: white;
 }
+
+img{
+    max-height: 300px;
+}
