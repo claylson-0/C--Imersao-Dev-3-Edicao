@@ -20,7 +20,7 @@ function anoLuz(){
     var km= parseFloat(document.getElementById("km").value);
     var anoLuz= km/9.461e+12;
     var resultado=document.getElementById("anoLuzConvertido");
-    resultado.innerHTML=anoLuz;
+    resultado.innerHTML="A velocidade em ano-luz é "+anoLuz;
 }
 
 function temperatura(){

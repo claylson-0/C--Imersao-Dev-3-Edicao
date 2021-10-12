@@ -27,17 +27,36 @@ var cartas3 = {
     }
 };
 
-var cartas = [cartas1, cartas2, cartas3];
+var cartas4 = {
+    nome: "Eva 01",
+    imagem:"https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q80/wp-content/uploads/2020/08/legiao_oZNikgVRTqtU.png.jpeg",
+    atributos: {
+        ataque: 10,
+        defesa: 7,
+        magia: 1
+    }
+};
+var cartas5 = {
+    nome: "Alphonse Elric",
+    imagem:"https://upload.wikimedia.org/wikipedia/pt/thumb/7/7c/AlphonseElricArakawa.jpg/250px-AlphonseElricArakawa.jpg",
+    atributos: {
+        ataque: 3,
+        defesa: 7,
+        magia: 9
+    }
+};
+
+var cartas = [cartas1, cartas2, cartas3, cartas4, cartas5];
 var cartaMaquina = 0;
 var cartaJogador = 0;
 
 function sortearCarta() {
-    var numeroCartaMaquina = parseInt(Math.random() * 3);
+    var numeroCartaMaquina = parseInt(Math.random() * cartas.length);
     cartaMaquina = cartas[numeroCartaMaquina];
 
-    var numeroCartaJogador = parseInt(Math.random() * 3);
+    var numeroCartaJogador = parseInt(Math.random() * cartas.length);
     while (numeroCartaMaquina == numeroCartaJogador) {
-        numeroCartaJogador = parseInt(Math.random() * 3);
+        numeroCartaJogador = parseInt(Math.random() * cartas.length);
     }
     cartaJogador = cartas[numeroCartaJogador];
     exibirCartaJogador();

@@ -1,5 +1,5 @@
-var listaNome = ["boku no hero", "darling in the franxx"];
-var listaFilme = ["https://i.pinimg.com/originals/e9/76/a2/e976a29e0ffaefd0c16bc2be934cd9dd.jpg", "https://64.media.tumblr.com/c9a6e9a6c8ba697f97b909ee59a508b1/tumblr_p7taf5vQkp1rovzi7o1_1280.jpg"];
+var listaNome = [];
+var listaFilme = [];
 
 function adicionarFilme() {
     var filmeFavorito = document.getElementById("filme").value;
